@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="stexcman_patmutyun.css">
+</head>
+<body>
+
+
+<!-- //------------------------------------------------------
+//                   PRELOADER AND SCROLL.TO.TOP
+//------------------------------------------------------ -->
+<img src="Images/chevron.png" class="scroll_to_top" alt="Up Arrow">
+
+
+
+<!-- //------------------------------------------------------
+//                      HEADER
+//------------------------------------------------------ -->
+
+<header class="main_header">
+    <div class="logo_container"><img src="Images/gitlogo.png" alt="Logo"></div>
+    <nav class="heading_nav">
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 15%;"><a href="../index.html">Գլխավոր</a></div>
+        <div class="flex_alcenter_jscenter hiding_nav carayutyunner">Ծառայություններ</div>
+        <div class="flex_alcenter_jscenter hiding_nav dasyntacner">
+            Դասընթացներ
+            <img class="drop_down_arrow" src="Images/down_arrow.png" alt="Down arrow" width="10%">
+        </div>
+        <!--
+            DROPDOWN
+        -->
+        <div class="drop_down">
+            <a href="index3.html"><div class="drop_down_items">Ծրագրավորում</div></a>
+            <a href="index3.html"><div class="drop_down_items">Մուլտիմեդիա</div></a>            
+            <a href="index3.html"><div class="drop_down_items">Վիդեոմոնտաժ</div></a>        
+        </div>
+
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Աշխատանք</div>
+        <div class="flex_alcenter_jscenter hiding_searching_inputnav border_white_hover">Թեստեր</div>
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 7%;">Կապ</div>
+        <img  src="Images/search_icon.png" alt="Search Icon" width="3%" class="search_icon">
+        <!--  SEARCH INPUT  -->
+        <input type="text" name="search" id="searching_input" placeholder="Looking for something?" >
+        <div class="flex_alcenter_jscenter hiding_nav language_icon">
+            <img src="Images/arm.png" alt="Arm" height="70%" class="current_language">
+            <img src="Images/down_arrow.png" alt="down_arrow" width="20%">
+        </div>
+        <!-- Languages Drop Down-->
+        <div class="language_drop_down">  
+            <div class="language_drop_down_items">
+                <img src="Images/arm.png" alt="" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="Images/rus.png" alt="" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="Images/eng.png" alt="" onclick="changing_language(this)">
+            </div>
+        </div>
+    </nav>
+    <img src="Images/menu_icon.png" alt="Menu Icon" class="mobile_menu">
+</header>
+
+
+
+<!-- //------------------------------------------------------
+//                      HEADER 2
+//------------------------------------------------------ -->
+<header class="globalit_masin_container">
+    "ԳԼՈԲԱԼ ԻՏ" ՍՊԸ-ի մասին
+</header>
+<div class="header_sections_container">
+    <a class="current_nav_btn">Ստեղծման պատմություն</a>
+    <a class="mer_masin_nav_btns" onmouseover="border_none()" onmouseout="border_bottom()" href="tnorinutyun.html">Տնօրինություն</a>
+    <a class="mer_masin_nav_btns" onmouseover="border_none()" onmouseout="border_bottom()" href="ashxatakazm.html">Աշխատակազմ</a>
+    <a class="mer_masin_nav_btns" onmouseover="border_none()" onmouseout="border_bottom()" href="usanoxner.html">Ուսանողներ</a>
+    <a class="mer_masin_nav_btns" onmouseover="border_none()" onmouseout="border_bottom()" href="gorcynkerner.html">Գործընկերներ</a>
+    <a class="mer_masin_nav_btns" onmouseover="border_none()" onmouseout="border_bottom()" href="masnachyuxer.html">Մասնաճյուղեր</a>
+</div>
+<hr width="85%" noshade="noshade" />
+
+<!-- //------------------------------------------------------
+//                      MER PATMUTYUN SECTION
+//------------------------------------------------------ -->
+<section class="mer_patmutyun_section">
+    <div class="article_holder">
+        <div class="mer_patmutyan_vernagir">Մեր պատմությունը մեր ժառանգությունն է</div>
+        <article class="mer_patmutyan_article">«Ինեկոբանկ» ՓԲԸ-ն հանդիսանում է Հարավային Կովկասի առաջատար բանկերից մեկը և մատուցում է համալիր բանկային ծառայություններ անհատներին, ՓՄՁ և խոշոր կազմակերպություններին՝ սպասարկելով ավելի քան 500,000 հաճախորդի Հայաստանում։</article>
+        <article class="mer_patmutyan_article">Ինեկոբանկը հիմնադրվել է 1996 թվական փետրվարի 7-ին (ՀՀ ԿԲ Բանկային արտոնագիր # 68) հայ գործարարներ Ավետիս Բալոյանի, Կարեն Սաֆարյանի և նրանց այլ գործընկերների կողմից։ Իր գոյության ողջ ժամանակահատվածում Բանկը միշտ կարևորել է նորարությունները՝ մշակելով և իր հաճախորդներին մատուցելով ոլորտի առաջատար և ժամանակակից բանկային լուծումներ։</article>
+        <article class="mer_patmutyan_article">Ինեկոբանկը Հայաստանի առաջատար բանկերից է նաև միջազգային ֆինանսական կազմակերպությունների հետ համագործակցությամբ։ Այսօր Բանկն ունի թղթակցային հարաբերություններ մի շարք առաջատար արտասահմանյան բանկերի հետ, ինչպես նաև համագործակցում է ավելի քան 30 հեղինակավոր միջազգային ֆինանսական կազմակերպությունների հետ, նրանց կողմից առաջարկվող ֆինանսավորման տարբեր ծրագրերի շրջանակներում։ </article>
+    </div>
+    <img class="mer_patmutyun_section_img" src="Images/mail.png" alt="">
+</section>
+
+
+
+<!-- //------------------------------------------------------
+//                      MER PATMUTYUN SECTION
+//------------------------------------------------------ -->
+
+<section class="mer_hajoxutyunner_section">
+    <img src="Images/html_and_a.png" alt="" width="30%" height="40%">
+    <div style="width: 50%;background: #FBFBFB;">
+        <div class="mer_hajoxutyunner_text">Մենք ինչ հաջողությունների ենք հասել</div>
+        <article class="mer_hajoxutyunner_article">2019թ․-ին սպառողին ներկայացրեց «Փոխանցում քարտին» նոր հնարավորությունը, որի շնորհիվ InecoOnline և InecoMobile համակարգերի օգտատերերը կարող են կատարել քարտից քարտ և հաշվից քարտ արագ փոխանցումներ ԱրՔա համակարգի անդամ հանդիսացող այլ բանկերի կողմից թողարկված քարտերին։</article>
+        <article class="mer_hajoxutyunner_article">2018թ․-ին առաջինը բանկային համակարգում գործարկեց նորարարական և ժամանակակից InecoPay վճարային համակարգը, որը հնարավորություն է տալիս վճարումներ իրականացնել սմարտֆոնի միջոցով:</article>
+        <article class="mer_hajoxutyunner_article">2017թ.-ին բանկը առաջինն էր, որ ներդրեց ամբողջովին ավտոմատացված վարկավորման գործընթաց իր օնլայն և մոբայլ հավելվածների միջոցով: Արդյունքում վարկերը տրամադրվում են հաճախորդներին 24/7 ռեժիմով։</article>
+        <article class="mer_hajoxutyunner_article">2014թ.-ին ներդրեց InecoMobile բջջային հավելվածն, որն իր հնարավորությունների և օգտագործման պարզության շնորհիվ այսօր ունի ամենաշատ օգտատերերը հայաստանյան ֆինանսական հավելվածների շարքում։</article>
+        <article class="mer_hajoxutyunner_article">2012թ.-ին իր InecoOnline համակարգի շնորհիվ առաջիններից մեկն էր, որն ապահովեց գործարքների կատարումը 24/7 ռեժիմով:</article>
+        <article class="mer_hajoxutyunner_article">2009թ.-ին առաջինը Հայաստանում ներդրեց «Ապառիկ տեղում» թվայնացված և ամբողջովին ավտոմատացված ծրագիրը, որն ապրանքի ապառիկ գնման գործընթացը 3-4 օրից կրճատեց մինչև մի քանի րոպեի։</article>
+    </div>
+</section>
+
+
+<!-- //------------------------------------------------------
+//                      MENQ HANDISANUM ENQ SECTION
+//------------------------------------------------------ -->
+
+<section class="menq_handisanumenq_section">
+    <div class="menq_handisanum_enq_text_container">
+        <div class="menq_handisanumenq_text">Մենք հանդիսանում ենք`</div>
+        <div class="menq_handisanum_enq_description">«SWIFT» միջազգային վճարային համակարգի անդամ,</div>
+        <div class="menq_handisanum_enq_description">«Money Gram», «Unistream», «Intel Express», «Sigue» և «Converse Payments» միջազգային դրամական փոխանցումների համակարգերի անդամ,</div>
+        <div class="menq_handisanum_enq_description">«ArCa» վճարային համակարգի լիիրավ անդամ և բաժնետեր,</div>
+        <div class="menq_handisanum_enq_description">«MasterCard» միջազգային վճարային համակարգի աֆիլացված անդամ,</div>
+        <div class="menq_handisanum_enq_description">«Visa» միջազգային վճարային համակարգի անդամ,</div>
+        <div class="menq_handisanum_enq_description">«ՆԱՍԴԱՔ ՕԷՄԷՔՍ Արմենիա» ֆոնդային բորսայի անդամ</div>
+    </div>
+    <img src="Images/html_logo.png" alt="" width="25%">
+</section>
+
+
+<!-- //------------------------------------------------------
+//                     MER DZERQBERUMNERY
+//------------------------------------------------------ -->
+<section class="mer_dzerqberumnery_section">
+    <img src="Images/montage.png" alt="" width="35%" height="60%">
+    <div class="mer_dzerqberumnery_text_container">
+        <div class="mer_dzerqberumnery_heading">Մեր ձեռքբերումները՝</div>
+        <article class="mer_dzerqberumnery_articles">Սկսելով միայն մեկ մասնաճյուղով և ընդամենը մի քանի նվիրված աշխատակիցներով՝ այսօր բանկը հանդիսանում է հայաստանյան առաջատար նորարարական և խոշոր բանկերից մեկը, որն ապահովում է մոտ 800 աշխատատեղ և ներառված է ՀՀ խոշոր հարկատուների ցանկում։</article>
+        <article class="mer_dzerqberumnery_articles"><b style="color: #48A74A;">2019</b> <br/> <b>Moody’s Ba3 ՎԱՐԿԱՆԻՇ</b> <br/> Moody’s Investors Service միջազգային վարկանշային գործակալությունը  բարձրացրեց Ինեկոբանկ ՓԲԸ-ին  շնորհված վարկանիշները՝ դարձնելով B1-ից Ba3 ազգային արժույթով երկարաժամկետ ավանդների վարկանիշը և B2 -ից B1 արտարժույթով երկարաժամկետ ավանդների վարկանիշը։ </article>
+        <article class="mer_dzerqberumnery_articles"><b style="color: #48A74A;">2019</b> <br/> <b>Moody’s Ba3 ՎԱՐԿԱՆԻՇ</b> <br/> Moody’s Investors Service միջազգային վարկանշային գործակալությունը  բարձրացրեց Ինեկոբանկ ՓԲԸ-ին  շնորհված վարկանիշները՝ դարձնելով B1-ից Ba3 ազգային արժույթով երկարաժամկետ ավանդների վարկանիշը և B2 -ից B1 արտարժույթով երկարաժամկետ ավանդների վարկանիշը։ </article>
+        <article class="mer_dzerqberumnery_articles"><b style="color: #48A74A;">2019</b> <br/> <b>Moody’s Ba3 ՎԱՐԿԱՆԻՇ</b> <br/> Moody’s Investors Service միջազգային վարկանշային գործակալությունը  բարձրացրեց Ինեկոբանկ ՓԲԸ-ին  շնորհված վարկանիշները՝ դարձնելով B1-ից Ba3 ազգային արժույթով երկարաժամկետ ավանդների վարկանիշը և B2 -ից B1 արտարժույթով երկարաժամկետ ավանդների վարկանիշը։ </article>
+        <article class="mer_dzerqberumnery_articles"><b style="color: #48A74A;">2019</b> <br/> <b>Moody’s Ba3 ՎԱՐԿԱՆԻՇ</b> <br/> Moody’s Investors Service միջազգային վարկանշային գործակալությունը  բարձրացրեց Ինեկոբանկ ՓԲԸ-ին  շնորհված վարկանիշները՝ դարձնելով B1-ից Ba3 ազգային արժույթով երկարաժամկետ ավանդների վարկանիշը և B2 -ից B1 արտարժույթով երկարաժամկետ ավանդների վարկանիշը։ </article>
+    </div>
+</section>
+
+
+
+
+<!-- //------------------------------------------------------
+//                      FOOTER
+//------------------------------------------------------ -->
+<footer>
+    <section class="social_media_section">
+        <img src="Images/gitlogo.png" alt="Logo" width="20%">
+        <article class="about_article">
+            <<ԳԼՈԲԱԼ ԻՏ>> ՍՊԸ-ն հիմնադրվել է 2017թ-ի հոկտեմբեր 19-ին Գ. Քոսյանի կողմից: Մենք առաջարկում ենք ծրագրային տարատեսակ լուծումներ, որոնց նպատակն է մեծացնել Ձեր բիզնեսի շահութաբերությունը և նպաստել աճօն: Մեր ստեղծարար թիմը համատեղ ուժերով տալիս է նորարարական լուծումներ, որոնք նպաստում են Ձեր բիզնեսի թիրախային լսարանի ներգրավմանը:
+        </article>
+        <div class="social_media_container">
+            <nav class="social_link_container">
+                <a href="https://www.facebook.com/Glteducenter" target="_black"><img src="Images/facebook.png" alt="Facebook"></a>
+            </nav>
+            <nav class="social_link_container">
+                <a href="https://twitter.com/GITEDU_Center" target="_black"><img src="Images/twitter.png" alt="Twitter"></a>
+            </nav>
+            <nav class="social_link_container">
+                <a href="https://www.instagram.com/gitschool/" target="_black"><img src="Images/instagram-sketched.png" alt="Instagram"></a>
+            </nav>
+            <nav class="social_link_container" >
+                <a href="https://www.youtube.com/channel/UCpv5HEoLbyVyLd6vSneFTnQ?view_as=subscriber" target="_black"><img src="Images/youtube.png" alt="Youtube"></a>
+            </nav>
+        </div>
+    </section>
+    <section class="whole_navigaion_section">
+        <span class="navigation_columns">
+            <div class="navigation_through_site_heading">Դասընթացներ</div>
+            <nav><a href="">Վեբ Ծրագրավորում</a></nav>
+            <nav><a href="">Ծրագրավորում</a></nav>
+            <nav><a href="">Մուլտիմեդիա</a></nav>
+            <nav><a href="">Նախագծեր</a></nav>
+            <nav><a href="">Անվճար դասընթացներ</a></nav>
+            <nav><a href="">Այլ դասընթացներ</a></nav>
+            <nav><a href="">Անվճար Դպրոց 1-4 դասարան</a></nav>
+            <nav><a href="">Անվճար Դպրոց 5-9 դասարան</a></nav>
+        </span>
+        <span class="navigation_columns" style="height: 35vw;">
+            <div class="navigation_through_site_heading">Կայքի Քարտեզ</div>
+            <nav><a href="">Դասընթացներ</a></nav>
+            <nav><a href="">Մեր Մասին</a></nav>
+            <nav><a href="">Վեբ Կայքերի Պատրաստում</a></nav>
+            <nav><a href="">Հեռախոսային և Դեսքթոփ հավելվածներ</a></nav>
+        </span>
+        <span class="navigation_columns" style="width: 35%;">
+            <div class="navigation_through_site_heading">Հետադարձ Կապ</div>
+            <nav><a href="">ք. Երևան Պ. Սևակ 15/1</a></nav>
+            <nav><a href="">ք. Աբովյան գ. Արամուս Մշակույթի տուն</a></nav>
+            <nav><a href="tel:+374 55 560 590">+374 55 560 590</a></nav>
+            <nav><a href="tel:+374 95 355 255">+374 95 355 255</a></nav>
+            <nav><a href="tel:+374 94 806 714">+374 94 806 714</a></nav>
+            <nav><a href="tel:+374 41 806 714">+374 41 806 714</a></nav>
+            <nav><a href="tel:+374 43 960 950">+374 43 960 950</a></nav>
+            <nav><a href="tel:+374 98 960 950">+374 98 960 950</a></nav>
+            <nav><a href="">gitedu@bk.ru</a></nav>
+            <nav><a href="">globalit@gitedu.am</a></nav>
+        </span>
+    </section>
+    <div class="weird_item"></div>
+    <div class="footer">
+        <div style="height: 3vw;"></div>    
+        <hr width="92%" size="1px"/>
+        <div class="copyright">Copyright &copy;2020  Բոլոր հեղինակային իրավունքները պաշտպանված են:|💕 Կայքը պատրաստված է <p>"ԳԼՈԲԱԼ ԻՏ" ՍՊԸ-ի</p> կողմից,որը հանդիսանում է ընկերության Պաշտոնական կայքէջը: Կայքից նյութ տեղադրելիսհղումը gitedu.am-ին պարտադիր է </div>
+    </div>
+</footer>
+
+
+<script src="jquery.js"></script>
+<script src="stexcman_patmutyun.js"></script>
+</body>
+</html>
