@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css2.css">
+    <title>Global IT</title>
+</head>
+<body>
+
+    <!-- //------------------------------------------------------
+//                 LOG IN AND REGISTER SCREEN ԱՌՑԱՆՑ
+//------------------------------------------------------ -->
+<div class="login_registration_screen">
+    <div class="login_registration">
+        <div style="height: 5%;">
+            <img src="../Header and Footer Images/close_white.png" alt="Close" class="close_registration">
+        </div>
+        <img src="../Header and Footer Images/gitlogo.png" width="50%" alt="">
+        <div style="font-size: 2vw; color: white;margin: 3%;">Գրանցվել Դասընթացների Առցանց</div>
+        <img src="../Header and Footer Images/arm.png" alt="arm" class="telephone_input_language">
+        <div class="telephone_input_pin flex_alcenter_jscenter"><b>+374 -</b></div>
+        <form action="" style="height:100%;">
+            <input class="registration_form" type="text" placeholder="Անուն">
+            <input class="registration_form" type="text" placeholder="Ազգանուն">
+            <input class="registration_form" type="email" placeholder="Էլ. հասցե">
+            <input class="registration_form" type="telephone" placeholder="Հեռախոսահամար">
+            <input class="registration_form" type="submit" value="ՈԻՂԱՐԿԵԼ" ></input>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- //------------------------------------------------------
+//                      HEADER
+//------------------------------------------------------ -->
+
+
+    <header class="main_header">
+        <div class="logo_container"><img src="../Header and Footer Images/gitlogo.png" alt="Logo"></div>
+        <nav class="heading_nav">
+            <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 15%;"><a class="text_decoration_none" style="color: white;" href="../Main page/index.html">Գլխավոր</a></div>
+            <div class="flex_alcenter_jscenter hiding_nav carayutyunner">Ծառայություններ</div>
+            <div class="flex_alcenter_jscenter hiding_nav dasyntacner">
+                Դասընթացներ
+                <img class="drop_down_arrow" src="../Header and Footer Images/down_arrow.png" alt="Down arrow" width="10%">
+            </div>
+            <!--
+                DROPDOWN
+            -->
+            <div class="drop_down">
+               <a href="../Classes Page/index3.html"><div class="drop_down_items">Ծրագրավորում</div></a>
+               <a href="../Classes Page/index3.html""><div class="drop_down_items">Մուլտիմեդիա</div></a>
+               <a href="../Classes Page/index3.html""><div class="drop_down_items">Վիդեոմոնտաժ</div></a>
+            </div>
+            <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Աշխատանք</div>
+            <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Թեստեր</div>
+            <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 7%;">Կապ</div>
+         <div class="flex_alcenter_jscenter hiding_nav language_icon">
+             <img src="../Header and Footer Images/arm.png" alt="Arm" width="40%">
+             <img src="../Header and Footer Images/down_arrow.png" alt="down_arrow" width="30%">
+         </div>
+        <!-- Languages Drop Down-->
+
+        <div class="language_drop_down">  
+            <div class="language_drop_down_items">
+                <img src="../Header and Footer Images/arm.png" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="../Header and Footer Images/rus.png" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="../Header and Footer Images/eng.png" onclick="changing_language(this)">
+
+            </div>
+        </div>
+        </nav>
+        <img src="../Header and Footer Images/menu_icon.png" alt="Menu Icon" class="mobile_menu">
+    </header>
+
+
+<!-- //------------------------------------------------------
+//                      HOME SECTION
+//------------------------------------------------------ -->
+    <section class="home_section">
+
+
+        <!-- //------------------------------------
+        //                 ASIDE
+        //----------------------------------------- -->
+        <aside>
+            <div class="html_image_and_menu">
+                <img src="Images/html_and_a.png" alt="Html" width="85%" style="margin-left:1vw; height: 100%;"> 
+                <img class="aside_menu_icon" src="../Header and Footer Images/menu_icon.png" alt="Menu Icon">
+            </div>
+            <div class="quick_access_lessons_container">
+                <div class="quick_access_lessons">Վեբ ծրագրավորում
+                    <img class="lessons_image" src="Images/web1.png" alt="Php" width="25%">
+                </div>
+                <div class="quick_access_lessons">Ծրագրավորում
+                    <img class="lessons_image" src="Images/web3.png" alt="Php" width="25%">
+                </div>
+                <div class="quick_access_lessons">Մուլտիմեդիա
+                    <img class="lessons_image" src="Images/web4.png" alt="Php" width="25%">
+                </div>
+                <div class="quick_access_lessons">Նախագծեր
+                    <img class="lessons_image" src="Images/web6.png" alt="Php" width="25%">
+                </div>
+                <div class="quick_access_lessons">Անվճար դասընթացներ
+                    <img class="lessons_image" src="Images/web7.png" alt="Php" width="25%">
+                </div>
+                <div class="quick_access_lessons">Դպրոցի Առարկաներ
+                    <img class="lessons_image" src="Images/web8.png" alt="Php" width="25%">
+                </div>
+
+            </div>
+        </aside>
+
+
+        <!-- //------------------------------------
+        //                 CONTENT SECTION
+        //----------------------------------------- -->
+        <section class="content_section">
+            <header class="heading">
+                <img src="Images/menu_icon2.png" class="aside_menu_icon2" alt="">
+                <div class="fakultet_header" style="padding: 5px;">Ֆակուլտետ</div>
+                <div class="web_cragravorum_header">Վեբ ծրագրավորում</div>
+            </header>
+            <div class="gradient_line"></div>
+            <main>
+                <div class="big_lessons">
+                    <div class="lesson_background" style="background: linear-gradient(45deg,#FEC194,#FF0061);position: relative;">
+                        <div style="text-align: center;padding-top: 3%;box-sizing: border-box;"><img width="80%" src="Images/front-end-text.png" alt="Front End Text"></div>
+                        <img src="Images/clock.png" alt="Clock" style="margin: 3%;float: left;width: 3vw;">
+                        <img src="Images/Human.png" alt="Human" width="35%" style="position: absolute;bottom: 0;left:30%;z-index: 2;">
+                        <img src="Images/coffee.png" alt="Coffee" width="10%" style="position: absolute;bottom: 0;right:20%;z-index: 2;">
+                        <img src="Images/white_circle.png" alt="White Circle" width="60%" style="position: absolute;bottom: -15%;left:20%;z-index: 1;">
+                    </div>
+                    <div >
+                        <div class="lesson_name">
+                            <a href="../Classes Page/index3.html" class="text_decoration_none"><div><strong>Front -End</strong></div>
+                            <div>Ծրագրավորում</div></a>
+                        </div>
+                        <div class="lesson_content"><span> Տևողությունը ՝ - 4-6 ամիս<br/> Պարապմունք - խմբային, անհատակամ<br/> Շաբաթական 3 անգամ 1,5 - 2 ժամ<br/> Արժեքը՝ - 30,000 (խմբ.) , 60.000 (ան.)</div>
+                        <div class="dasyntaci_grancvel flex_alcenter_jscenter">ԳՐԱՆՑՎԵԼ</div>
+                    </div>
+                </div>
+                <div class="big_lessons">
+                    <div class="lesson_background" style="background: linear-gradient(45deg,#21C6FB,#FF0061);">
+
+                    </div>
+                    <div >
+                        <div class="lesson_name">
+                            <a href="../Classes Page/index3.html" class="text_decoration_none"><div><strong>Front -End</strong></div>
+                            <div>Ծրագրավորում</div></a>
+                        </div>
+                        <div class="lesson_content"> Տևողությունը ՝ - 4-6 ամիս<br/> Պարապմունք - խմբային, անհատակամ<br/> Շաբաթական 3 անգամ 1,5 - 2 ժամ<br/> Արժեքը՝ - 30,000 (խմբ.) , 60.000 (ան.)</div>
+                        <div class="dasyntaci_grancvel flex_alcenter_jscenter">ԳՐԱՆՑՎԵԼ</div>
+                    
+                    </div>
+                </div>
+                <div class="big_lessons">
+                    <div class="lesson_background" style="background: linear-gradient(45deg,#FFE53B,#00FFFF);">
+
+                    </div>
+                    <div >
+                        <div class="lesson_name">
+                            <a href="../Classes Page/index3.html" class="text_decoration_none"><div><strong>Front -End</strong></div>
+                            <div>Ծրագրավորում</div></a>
+                        </div>
+                        <div class="lesson_content"> Տևողությունը ՝ - 4-6 ամիս<br/> Պարապմունք - խմբային, անհատակամ<br/> Շաբաթական 3 անգամ 1,5 - 2 ժամ<br/> Արժեքը՝ - 30,000 (խմբ.) , 60.000 (ան.)</div>
+                        <div class="dasyntaci_grancvel flex_alcenter_jscenter">ԳՐԱՆՑՎԵԼ</div>
+                        
+                    </div>
+                </div>
+                <div class="big_lessons">
+                    <div class="lesson_background" style="background: linear-gradient(45deg,#FEC194,#FF0061);">
+                    </div>
+                    <div >
+                        <div class="lesson_name">
+                            <a href="../Classes Page/index3.html" class="text_decoration_none"><div><strong>Front -End</strong></div>
+                            <div>Ծրագրավորում</div></a>
+                        </div>
+                        <div class="lesson_content"> Տևողությունը ՝ - 4-6 ամիս<br/> Պարապմունք - խմբային, անհատակամ<br/> Շաբաթական 3 անգամ 1,5 - 2 ժամ<br/> Արժեքը՝ - 30,000 (խմբ.) , 60.000 (ան.)</div>
+                        <div class="dasyntaci_grancvel flex_alcenter_jscenter">ԳՐԱՆՑՎԵԼ</div>
+                        
+                    </div>
+                </div>
+                <!-- <div class="small_lessons">
+                    <div class="small_lesson_background" style="background: linear-gradient(45deg,#00FFFF,#93278F);"></div>
+                    <div class="small_lesson_content">
+                        <div style="width: 100%;padding-top:5%;">
+                            <div class="point" style="background: #00FFFF;"></div> #00FFFF
+                        </div>
+                        <div style="width: 100%;padding:3%;">
+                            <div class="point" style="background: #93278F;"></div> #93278F
+                        </div>
+                    </div>
+                </div>
+                <div class="small_lessons">
+                    <div class="small_lesson_background" style="background: linear-gradient(45deg,#00FFA9,#0d4dFF);"></div>
+                    <div class="small_lesson_content">
+                        <div style="width: 100%;padding-top:5%;">
+                            <div class="point" style="background: #00FFA9;"></div> #00FFA9
+                        </div>
+                        <div style="width: 100%;padding:3%;">
+                            <div class="point" style="background: #0D4DFF;"></div> #0D4DFF
+                        </div>
+                    </div>
+                </div>
+                <div class="small_lessons">
+                    <div class="small_lesson_background" style="background: linear-gradient(45deg,#FFE53B,#00FFFF);"></div>
+                    <div class="small_lesson_content">
+                        <div style="width: 100%;padding-top:5%;">
+                            <div class="point" style="background: #FFE53B;"></div> #FFE53B
+                        </div>
+                        <div style="width: 100%;padding:3%;">
+                            <div class="point" style="background: #00FFFF;"></div> #00FFFF
+                        </div>
+                    </div>
+                </div>
+                <div class="small_lessons">
+                    <div class="small_lesson_background" style="background: linear-gradient(45deg,#FEC194,#FF0061);"></div>
+                    <div class="small_lesson_content">
+                        <div style="width: 100%;padding-top:5%;">
+                            <div class="point" style="background: #FEC194;"></div> #FEC194
+                        </div>
+                        <div style="width: 100%;padding:3%;">
+                            <div class="point" style="background: #FF0061;"></div> #FF0061
+                        </div>
+                    </div>
+                </div>
+                <div class="small_lessons">
+                    <div class="small_lesson_background" style="background: linear-gradient(45deg,#FFE53B,#FF2525);"></div>
+                    <div class="small_lesson_content">
+                        <div style="width: 100%;padding-top:5%;">
+                            <div class="point" style="background: #FFE53B;"></div> #FFE53B
+                        </div>
+                        <div style="width: 100%;padding:3%;">
+                            <div class="point" style="background: #FF2525;"></div> #FF2525
+                        </div>
+                    </div>
+                </div>
+                <div class="small_lessons">
+                    <div class="small_lesson_background" style="background: linear-gradient(45deg,#FFE53B,#FF2525);"></div>
+                    <div class="small_lesson_content">
+                        <div style="width: 100%;padding-top:5%;">
+                            <div class="point" style="background: #FFE53B;"></div> #FFE53B
+                        </div>
+                        <div style="width: 100%;padding:3%;">
+                            <div class="point" style="background: #FF2525;"></div> #FF2525
+                        </div>
+                    </div>
+                </div> -->
+            </main>
+        </section>
+    </section>
+
+    <script src="../jquery.js"></script>
+    <script src="js2.js"></script> 
+</body>
+</html>

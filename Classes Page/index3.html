@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global IT</title>
+    <link rel="stylesheet" href="css3.css">
+</head>
+<body>
+
+<!---------------------
+        PRELOADER
+--------------------------->
+<!-- <div class="preloader"></div> -->
+
+<!-- //------------------------------------------------------
+//                 LOG IN AND REGISTER SCREEN
+//------------------------------------------------------ -->
+<div class="login_registration_screen">
+    <div class="login_registration">
+        <div style="height: 5%;">
+            <img src="../Header and Footer Images/close_white.png" alt="Close" class="close_registration" width="5%">
+        </div>
+        <img src="../Header and Footer Images/gitlogo.png">
+        <div style="font-size: 2vw; color: white;margin: 3%;">Դասընթացին դիմել գրասենյակում</div>
+        <form action="" style="height:100%;">
+            <input class="registration_form" type="text" placeholder="Անուն">
+            <input class="registration_form" type="text" placeholder="Ազգանուն">
+            <input class="registration_form" type="email" placeholder="Էլ. հասցե">
+            <input class="registration_form" type="telephone" placeholder="Հեռախոսահամար">
+            <input class="registration_form" type="submit" value="ՈԻՂԱՐԿԵԼ" ></input>
+        </form>
+    </div>
+</div>
+
+<div class="login_registration_screen">
+    <div class="login_registration">
+        <div style="height: 5%;">
+            <img src="../Header and Footer Images/close_white.png" alt="Close" class="close_registration" width="5%">
+        </div>
+        <img src="../Header and Footer Images/gitlogo.png" width="50%" alt="">
+        <div style="font-size: 2vw; color: white;margin: 3%;">Դասընթացին դիմել առցանց</div>
+        <form action="" style="height:100%;">
+            <input class="registration_form" type="text" placeholder="Անուն">
+            <input class="registration_form" type="text" placeholder="Ազգանուն">
+            <input class="registration_form" type="email" placeholder="Էլ. հասցե">
+            <input class="registration_form" type="telephone" placeholder="Հեռախոսահամար">
+            <input class="registration_form" type="submit" value="ՈԻՂԱՐԿԵԼ" ></input>
+        </form>
+    </div>
+</div>
+
+<!-- //------------------------------------------------------
+//                      HEADER
+//------------------------------------------------------ -->
+<header class="main_header">
+    <div class="logo_container"><img src="../Header and Footer Images/gitlogo.png" alt="Logo"></div>
+    <nav class="heading_nav">
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 15%;"><a class="text_decoration_none" style="color: white;" href="../Main page/index.html">Գլխավոր</a></div>
+        <div class="flex_alcenter_jscenter hiding_nav carayutyunner">Ծառայություններ</div>
+        <div class="flex_alcenter_jscenter hiding_nav dasyntacner">
+            Դասընթացներ
+            <img class="drop_down_arrow" src="../Header and Footer Images/down_arrow.png" alt="Down arrow" width="10%">
+        </div>
+        <!--
+            DROPDOWN
+        -->
+        <div class="drop_down">
+            <div class="drop_down_items">Ծրագրավորում</div>
+            <div class="drop_down_items">Մուլտիմեդիա</div>
+            <div class="drop_down_items">Վիդեոմոնտաժ</div>
+        </div>
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Աշխատանք</div>
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Թեստեր</div>
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 7%;">Կապ</div>
+     <div class="flex_alcenter_jscenter hiding_nav language_icon">
+         <img src="../Header and Footer Images/arm.png" alt="Arm" width="40%">
+         <img src="../Header and Footer Images/down_arrow.png" alt="down_arrow" width="30%">
+     </div>
+        <!-- Languages Drop Down-->
+
+        <div class="language_drop_down">  
+            <div class="language_drop_down_items">
+                <img src="../Header and Footer Images/arm.png" alt="" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="../Header and Footer Images/rus.png" alt="" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="../Header and Footer Images/eng.png" alt="" onclick="changing_language(this)">
+
+            </div>
+        </div>
+    </nav>
+    <img src="../Header and Footer Images/menu_icon.png" alt="Menu Icon" class="mobile_menu">
+</header>
+
+
+<!-- //------------------------------------------------------
+//                      MAIN BANNER
+//------------------------------------------------------ -->
+<section class="main_banner">
+    <div class="fakultet_img_container">
+        <img src="Images/logog.png" alt="logog" width="60%">
+    </div>
+    <div class="main_heading">
+        Front - End Ծրագրավորում
+    </div>
+    <div class="html_css_js_img_container">
+        <img src="Images/html_logo.png" alt="java" width="30%">
+        <img src="Images/css_logo.png" alt="ps" width="20%" style="margin-right:5%;">
+        <img src="Images/js_logo.png" alt="Js" width="20%">
+    </div>
+    <div class="grancvel_btn flex_alcenter_jscenter">
+        <img src="Images/document.png" alt="document" style="margin-right:6%;width: 22%;"> 
+        <div class="grancvel_text">Դիմել</div>
+    </div>
+    <div class="online_usucum_btn flex_alcenter_jscenter">
+        <img src="Images/notebook.png" alt="notebook" style="margin-right:7%;width: 17%;">
+        <div class="online_usucum_text" >Օնլայն Ուսուցում</div>
+    </div>
+</section>
+
+
+<!-- //------------------------------------------------------
+//                      MAIN INFORMATION
+//------------------------------------------------------ -->
+<div class="main_information flex_alcenter_jscenter"> 
+    <div class="main_information_column flex_alcenter_jscenter" style="width:15%">
+        <img src="Images/arrow_to_top.png" alt="arrow_to_top" width="20%" style="margin-right:5%;">
+        <div>Սկսնակ</div>
+    </div>
+    <div class="main_information_column flex_alcenter_jscenter" style="width:15%">
+        <img src="Images/calendar.png" alt="calendar" width="20%" style="margin-right:5%;">
+        <div>4 - 6 ամիս</div>
+
+    </div>
+    <div class="main_information_column flex_alcenter_jscenter" style="width:20%">
+        <img src="Images/globus_1.png" alt="globus_1" width="15%" style="margin-right:5%;">
+        <div>լեզու -</div>
+        <img src="../Header and Footer Images/eng.png" alt="arm" width="13%">
+        <img src="../Header and Footer Images/rus.png" alt="rus" width="13%">
+        <img src="../Header and Footer Images/arm.png" alt="eng" width="13%">
+
+    </div>
+    <div class="main_information_column flex_alcenter_jscenter" style="width:25%">
+        <img src="Images/money.png" alt="money" width="15%" style="margin:0 4%">   
+        <div style="text-align: center;">30.000 դր./ ամիս (խմբ.)
+            <span style="font-size: 1vw;">45.000 դր./ ամիս (անհ.)</span>
+        </div>
+    </div>
+    <div class="main_information_column flex_alcenter_jscenter" style="width:25%">
+        <img src="Images/white_clock.png" alt="white_clock" width="12%" style="margin-right:5%;">
+        <div> - Խումբը Կազմավորվում է</div>
+
+    </div>
+</div>
+
+
+
+<!-- //------------------------------------------------------
+//                      MAIN ARTICLE
+//------------------------------------------------------ -->
+<article class="main_article" style="text-align: center;">
+    <div style="font-size: 3.5vw;color: #4D4D4D">Характеристики курса</div>
+    <div style="width: 80%;margin:auto;font-size: 2vw;">Программа рассчитана на новичков, которые хотят изучить веб программирование и за короткий промежуток времени начать создавать веб сайты. За время программы вы узнаете множество новых понятий, изучите теорию, а также на практике научитесь строить полноценные веб сайты, применяя все современные технологии и навыки.</div>
+</article>
+
+<div class="flex_alcenter_jscenter" style="height: 20vw;"> 
+    <img width="70%" src="Images/languages.png" alt="languages">
+</div>
+
+<div style="height: 35vw;position: relative;" class="flex_alcenter_jscenter">
+    <img src="Images/globus.png" alt="globus" width="60%">
+    <div class="aystex_sovorumen"> Այստեղ սովորում են</div>
+    <div class="language_circle_container">
+        <div class="language_circle">
+            <img src="../Header and Footer Images/eng.png" alt="arm">
+
+        </div>
+        <div class="language_circle">
+            <img src="../Header and Footer Images/rus.png" alt="rus">
+
+        </div>
+        <div class="language_circle">
+            <img src="../Header and Footer Images/arm.png" alt="eng">
+        </div>
+    </div>
+</div>
+
+
+
+<!-- //------------------------------------------------------
+//                      USUMNAKAN CRAGIR
+//------------------------------------------------------ -->
+<div class="usumnakan_cragir flex_alcenter_jscenter">
+    Ուսումնական ծրագիր
+</div>
+
+
+<!-- //------------------------------------------------------
+//                      I PUL
+//------------------------------------------------------ -->
+<section class="I_pul_section">
+    <div class="pul_section_1_container">
+        <div class="globus_banner_container">
+            <img src="Images/globus_banner.png" alt="globus_banner" width="12%">
+            <div style="height: 100%;width: 25%;">
+                <div class="I_pul_text flex_alcenter_jscenter">1 ին Փուլ</div>
+                <div style="font-size: 1vw;margin-left: 5%;">Հունվար - Փետրվար</div>
+            </div>    
+        </div>
+        <div class="puli_vernagir">Փուլի Վերնագիր</div>
+        <div style="width: 95%;margin-left: 5%;font-size: 2vw;">Փուլի բնութագիր, մանրամասն նկարագիր սպասվող արդյունք</div>
+        <div class="dasyntac_container">
+            <div class="dasyntac_anun dasyntac_anun1">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun dasyntac_anun2">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun dasyntac_anun3">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun dasyntac_anun4">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun dasyntac_anun5">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun dasyntac_anun6">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+        </div>
+    </div>
+    <div class="pul_section_2_container">
+        <div>
+            <div style="text-align: center;font-size: 2vw;margin-top: 5%;">Թեմայի նկարագրություն</div>
+            <div class="class_description">PHPЯзык PHP лежит в основе профессии Back-end разработчик. В первом модуле программы вы ознакомитесь с установкой и настройкой локального сервера, а также с установкой редактора.</div>
+        </div>
+
+        <div class="flex_alcenter_jscenter" style="margin: 2% 0">
+            <img src="Images/game.png" alt="game" width="70%">
+        </div>
+        
+        <div style="display: flex;justify-content: space-evenly;align-items: center;">
+            <div class="tnayin_ashxatanq flex_alcenter_jscenter tnayin_btns">Տնային Աշխ.</div>
+            <div class="videodas flex_alcenter_jscenter tnayin_btns">Վիդեոդաս</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- //------------------------------------------------------
+//                      II PUL
+//------------------------------------------------------ -->
+<section class="II_pul_section">
+    <div class="pul_section_1_container">
+        <div class="globus_banner_container">
+            <img src="Images/globus_banner.png" alt="globus_banner" width="12%">
+            <div style="height: 100%;width: 25%;">
+                <div class="I_pul_text flex_alcenter_jscenter">II Փուլ</div>
+                <div style="font-size: 1vw;margin-left: 5%;">Հունվար - Փետրվար</div>
+            </div>    
+        </div>
+        <div class="puli_vernagir">Փուլի Վերնագիր</div>
+        <div style="width: 95%;margin-left: 5%;font-size: 2vw;">Փուլի բնութագիր, մանրամասն նկարագիր սպասվող արդյունք</div>
+        <div class="dasyntac_container">
+            <div class="dasyntac_anun">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+            <div class="dasyntac_anun">ԴԱՍ 1 : Թեմա - Տևող. 1.5Ժ</div>
+        </div>
+    </div>
+    <div class="pul_section_2_container">
+        <div>
+            <div style="text-align: center;font-size: 2vw;margin-top: 5%;">Թեմայի նկարագրություն</div>
+            <div style="font-size: 1.7vw;text-align: center;line-height: 1.5em;">PHPЯзык PHP лежит в основе профессии Back-end разработчик. В первом модуле программы вы ознакомитесь с установкой и настройкой локального сервера, а также с установкой редактора.</div>
+        </div>
+
+        <div class="flex_alcenter_jscenter" style="margin: 2% 0">
+            <img src="Images/java.png" alt="game" width="70%">
+        </div>
+        
+        <div style="display: flex;justify-content: space-evenly;align-items: center;">
+            <div class="tnayin_ashxatanq flex_alcenter_jscenter tnayin_btns">Տնային Աշխ.</div>
+            <div class="videodas flex_alcenter_jscenter tnayin_btns">Վիդեոդաս</div>
+        </div>
+    </div>
+</section>
+
+<!-- //------------------------------------------------------
+//                      FOOTER
+//------------------------------------------------------ -->
+<footer>
+    <section class="social_media_section">
+        <img src="../Header and Footer Images/gitlogo.png" alt="Logo" width="20%">
+        <article class="about_article">
+            <<ԳԼՈԲԱԼ ԻՏ>> ՍՊԸ-ն հիմնադրվել է 2017թ-ի հոկտեմբեր 19-ին Գ. Քոսյանի կողմից: Մենք առաջարկում ենք ծրագրային տարատեսակ լուծումներ, որոնց նպատակն է մեծացնել Ձեր բիզնեսի շահութաբերությունը և նպաստել աճօն: Մեր ստեղծարար թիմը համատեղ ուժերով տալիս է նորարարական լուծումներ, որոնք նպաստում են Ձեր բիզնեսի թիրախային լսարանի ներգրավմանը:
+        </article>
+        <div class="social_media_container">
+            <nav class="social_link_container">
+                <a href="https://www.facebook.com/Glteducenter" target="_black"><img src="../Header and Footer Images/facebook.png" alt="Facebook"></a>
+            </nav>
+            <nav class="social_link_container">
+                <a href="https://twitter.com/GITEDU_Center" target="_black"><img src="../Header and Footer Images/twitter.png" alt="Twitter"></a>
+            </nav>
+            <nav class="social_link_container">
+                <a href="https://www.instagram.com/gitschool/" target="_black"><img src="../Header and Footer Images/instagram-sketched.png" alt="Instagram"></a>
+            </nav>
+            <nav class="social_link_container" >
+                <a href="https://www.youtube.com/channel/UCpv5HEoLbyVyLd6vSneFTnQ?view_as=subscriber" target="_black"><img src="../Header and Footer Images/youtube.png" alt="Youtube"></a>
+            </nav>
+        </div>
+    </section>
+    <section class="whole_navigaion_section">
+        <span class="navigation_columns">
+            <div class="navigation_through_site_heading">Դասընթացներ</div>
+            <nav><a href="">Վեբ Ծրագրավորում</a></nav>
+            <nav><a href="">Ծրագրավորում</a></nav>
+            <nav><a href="">Մուլտիմեդիա</a></nav>
+            <nav><a href="">Նախագծեր</a></nav>
+            <nav><a href="">Անվճար դասընթացներ</a></nav>
+            <nav><a href="">Այլ դասընթացներ</a></nav>
+            <nav><a href="">Անվճար Դպրոց 1-4 դասարան</a></nav>
+            <nav><a href="">Անվճար Դպրոց 5-9 դասարան</a></nav>
+        </span>
+        <span class="navigation_columns" style="height: 35vw;">
+            <div class="navigation_through_site_heading">Կայքի Քարտեզ</div>
+            <nav><a href="../Classes Page/index3.html">Դասընթացներ</a></nav>
+            <nav><a href="../Global IT About Us pages/Origin History/stexcman_patmutyun.html">Մեր Մասին</a></nav>
+            <nav><a href="../Global IT SERVICES pages/Web Developement/web_development_page.html">Վեբ Կայքերի Պատրաստում</a></nav>
+            <nav><a href="../Global IT SERVICES pages/Gaming/game_development_page.html">Հեռախոսային և Դեսքթոփ հավելվածներ</a></nav>
+        </span>
+        <span class="navigation_columns" style="width: 35%;">
+            <div class="navigation_through_site_heading">Հետադարձ Կապ</div>
+            <nav><a href="">ք. Երևան Պ. Սևակ 15/1</a></nav>
+            <nav><a href="">ք. Աբովյան գ. Արամուս Մշակույթի տուն</a></nav>
+            <nav><a href="tel:+374 55 560 590">+374 55 560 590</a></nav>
+            <nav><a href="tel:+374 95 355 255">+374 95 355 255</a></nav>
+            <nav><a href="tel:+374 94 806 714">+374 94 806 714</a></nav>
+            <nav><a href="tel:+374 41 806 714">+374 41 806 714</a></nav>
+            <nav><a href="tel:+374 43 960 950">+374 43 960 950</a></nav>
+            <nav><a href="tel:+374 98 960 950">+374 98 960 950</a></nav>
+            <nav><a href="">gitedu@bk.ru</a></nav>
+            <nav><a href="">globalit@gitedu.am</a></nav>
+        </span>
+    </section>
+    <div class="weird_item"></div>
+    <div class="footer">
+        <div style="height: 3vw;"></div>
+        <hr width="92%" size="1px"/>
+        <div class="copyright">Copyright &copy;2020  Բոլոր հեղինակային իրավունքները պաշտպանված են:|💕 Կայքը պատրաստված է <p>"ԳԼՈԲԱԼ ԻՏ" ՍՊԸ-ի</p> կողմից,որը հանդիսանում է ընկերության Պաշտոնական կայքէջը: Կայքից նյութ տեղադրելիսհղումը gitedu.am-ին պարտադիր է </div>
+    </div>
+</footer>
+
+<script src="../jquery.js"></script>
+<script src="js3.js"></script>
+</body>
+</html>

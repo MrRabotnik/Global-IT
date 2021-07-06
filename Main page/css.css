@@ -1,0 +1,1394 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url("../Header and Footer Images/background_canc.png");
+    background-size: 100%;
+    z-index: -1;
+}
+.flex_alcenter_jscenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text_decoration_none{
+    text-decoration: none;
+}
+*{
+    /* user-select: none; */
+    -webkit-user-drag: none;
+}
+img[src="../Header and Footer Images/chevron.png"]{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background: linear-gradient(to right,#672C90,#2C3192);
+
+    box-shadow: 0 4px 2px #666;
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    right: 2%;
+    bottom: 4%;
+}
+img[src="../Header and Footer Images/chevron.png"]:hover{
+    box-shadow: 0px 0px 7px white;
+}
+.preloader{
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+    background:  #672C90;
+	z-index: 10;
+	background-image: url('../Header and Footer Images/gitlogo.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25vw auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*
+//___________________________________________________________________________________________________________
+//                                              LOGIN AND REGISTRATION
+//___________________________________________________________________________________________________________
+*/
+.login_registration_screen{
+    position: fixed;
+    width: 100%;    
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    display: none ;
+}
+.login_registration_screen2{
+    display: none;
+}
+.secret_img{
+    position: absolute;
+    bottom: 0;
+}
+.login_registration{
+    margin: auto;
+    width: 40%;
+    height: 40vw;
+    background: #2C3192;
+    text-align: center;
+    position: relative;
+}
+.telephone_input_language{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    width: 7%;
+}
+.telephone_input_pin{
+    position: absolute;
+    left: 12%;
+    bottom: 21%;
+    width: 10%;
+    color: #672C90;
+    background: #ddd;
+    height: 5%;
+    font-size: 1.3vw;
+}
+.registration_form{
+    width: 90%;
+    background: white;
+    border:none;
+    outline:none;
+    height: 9% !important;
+    margin: 2%;
+    box-sizing: border-box;
+    color: #672C90;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.video_closing{
+    width: 2% !important;
+    float: right;
+    margin:0 2%;
+}
+.close_registration{
+    width: 5%;
+    float: right;
+    margin: 2%;
+    cursor: pointer;
+}
+input[type="submit"]{
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: rgb(214, 104, 0);
+}
+/*
+//___________________________________________________________________________________________________________
+//                                              GET IN CALL WITH US
+//___________________________________________________________________________________________________________
+*/
+.zangaharel_screen{
+    position: fixed;
+    width: 100%;    
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.zangaharel_box{
+    width: 30%;
+    height: 30vw;
+    background: #2C3192;
+    margin: auto;
+    text-align: center;
+}
+.zangel_btns{
+    margin:2% auto;
+    width: 90%;
+    border-radius: 3vw;
+    height: 15%;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.5vw ;
+}
+.zangel_btns:hover{
+    background: rgba(255, 255, 255,0.5) !important;
+}
+/*
+//___________________________________________________________________________________________________________
+//                                              ADVERTISMENT VIDEO
+//___________________________________________________________________________________________________________
+*/
+.video_section{
+    position: fixed;
+    width: 100%;
+    height: 60vw;
+    background: rgba(0,0,0,0.5);
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.video_borders{
+    width: 55%;
+    height: 80%;
+    background: linear-gradient(to right,#672C90,#2C3192);
+    border-radius: 1vw;
+}
+iframe{
+    width: 85%;
+    height: 90%;
+    display: block;
+    margin: auto;
+}
+/*
+//________________________________________________________________________________________________________________
+//                                                          HEADER
+//________________________________________________________________________________________________________________
+*/
+.main_header{
+    height: 9.7vw;
+    background: linear-gradient(to right,#672C90,#2C3192);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.logo_container{
+    width: 28%;
+    height: 9.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_container > img{
+    width: 75%;
+    height: 6vw;
+}
+.heading_nav{
+    width: 72%;
+    height: 9.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.heading_nav > div{
+    height: 3.5vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.carayutyunner{
+    width: 20%;
+    cursor: pointer;
+}
+.carayutyunner:hover{
+    background: #EA405A;
+    animation: background_blur_white 0.7s linear infinite;
+}
+.dasyntacner{
+    width: 18.5%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.dasyntacner:hover{
+    animation: background_blur_white 0.7s linear infinite;
+    background: #EA405A;
+}
+@keyframes background_blur_white{
+    50%{
+        box-shadow:0 2px 4px white;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+/* -----------
+    DROP DOWN
+------------*/
+.drop_down{
+    background: linear-gradient(#873FAF,#4B28C4);
+    position: absolute;
+    top: 8vw;
+    right: 30vw;
+    width: 15%;
+    height: 15vw !important;
+    z-index: 3;
+    color: whitesmoke;
+    border:1px solid white;
+    display: none;
+}
+.drop_down_items{
+    width: 100%;
+    height: 33%;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop_down_items:hover{
+    background: linear-gradient(#4B28C4,#873FAF);
+    color: white;
+
+}
+.drop_down_arrow{
+    transition: transform 1s;
+}
+
+/* --------------------------
+    DROP DOWN MENU
+-------------------------*/
+.drop_down_menu{
+    background: linear-gradient(#873FAF,#4B28C4);
+    color: whitesmoke;
+}
+.drop_down_menu_items{
+    width: 100%;
+    height: 8vh;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop_down_items:hover{
+    background: linear-gradient(#4B28C4,#873FAF);
+    color: white;
+
+}
+/*--------------------------*/
+.border_white_hover:hover{
+    animation: background_blur_white 0.7s linear infinite;
+    background: #EA405A;
+}
+.search_icon{
+    cursor: pointer;
+}
+#searching_input{
+    width: 20%;
+    height: 2.5vw;
+    position: absolute;
+    right: 40vw;
+    top: 10vw;
+    z-index: 4;
+    color: #4B28C4;
+    display: none;
+    outline: none;
+    border: 2px solid #4B28C4;
+    border-radius: 1vw;
+    padding-left: 2%;
+    font-size: 1.3vw;
+    animation: glow 1s linear infinite;
+}
+@keyframes glow{
+    50%{
+        box-shadow: 0 0 10px white;
+    }
+}
+.language_icon{
+    width: 6vw;
+}
+.language_drop_down{
+    width: 3%;
+    height: 7vw !important;
+    background: #2C3192;
+    position: absolute;
+    right: 2.4vw;
+    top: 6vw;
+    z-index: 3;
+    display: none;
+}
+.language_drop_down_items{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language_drop_down_items > img{
+    width: 80%;
+}
+.mobile_menu{
+    display: none;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                    DROPPING MENU
+----------------------------------------------------------------------------------------------------------------
+*/
+
+
+.dropping_menu{
+    background: linear-gradient(to left,#672C90,#2C3192);
+    display: none;
+}
+.drop_down_menu{
+    display: none;
+}
+#moving_arrow{
+    margin-left: 1%;
+    width: 5%;
+    transition: transform 1s;
+}
+.drop_down_menu_items{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+    cursor: pointer;
+}
+.drop_down_menu_items:hover{
+    color: orange;
+}
+.drop_down_menu_items:active{
+    color: orange;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                    HOME SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+
+.home_section{
+    position: relative;
+    height: 59vw;
+}
+.zangaharel_btn{
+    cursor: pointer;
+    position: absolute;
+    top: 0.5vw;
+    right: 3%;
+    border-radius: 5vw;
+    padding: 1.3% 3%;
+    padding-top: 1.1%;
+    background: #FFAE2E;
+    font-size: 2.8vw;
+    color: white;
+    z-index: 1;
+}
+.zangaharel_btn_mobile{
+    width: 20%;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5vw;
+    right: 19%;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    display: none;
+}
+.zangaharel_btn:hover{
+    animation: gradient 1.5s linear  infinite;
+}
+@keyframes gradient{
+    50%{
+        background: #d45204;
+    }
+    100%{
+        background: #FFAE2E;
+    }
+}
+.krtutyun_praktika_ashxatanq_container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 35vw;
+    position: absolute;
+    top: 6vw;
+    left: 8%;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 1.2em;
+}
+.stanal_krtutyun{
+    font-size: 1.8vw;
+}
+.education_types{
+    width: 60%;
+    height: 4vw;
+    margin: auto;
+    font-size: 2vw;
+    background: #525DEA;
+    border-radius: 3vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.education_types:hover{
+    background: transparent;
+    font-size: 2.1vw ;
+    border: 1px solid white;
+    z-index: 2;
+}
+.montage_area_img{
+    position: absolute;
+    width: 50%;
+    height: 41vw;
+    right: 0;
+    top: 10vw;
+    z-index: 1;
+}
+img[src="Images/shisteryonka.png"]{
+    position: absolute;
+    right: 25vw;
+    top: 5vw;
+    width: 25%;
+    animation: rotate360 8s linear infinite;
+}
+img[src="Images/red_circle.png"]{
+    position: absolute;
+    right: 15.2vw;
+    top: 12.5vw;
+    width: 12%;
+    z-index: 3;
+    animation: rotate360 6s linear infinite;
+}
+img[src="Images/play_button.png"]{
+    position: absolute;
+    right: 19vw;
+    top: 17vw;
+    width: 4%;
+    z-index: 4;
+    cursor: pointer;
+}
+.question_mark{
+    position: absolute;
+    right: 40%;
+    top: 12vw;
+    z-index: 2;
+    width: 5%;
+}
+img[src="Images/user_login.png"]{
+    position: absolute;
+    right: 4vw;
+    top: 7vw;
+    width: 8%;
+    z-index: 3;
+    cursor: pointer;
+}
+img[src="Images/hamalsaran.png"]{
+    position: absolute;
+    right: 6vw;
+    top: 16vw;
+    width: 4%;
+    z-index: 3;
+}
+img[src="Images/medal.png"]{
+    position: absolute;
+    right: 6vw;
+    top: 21.5vw;
+    width: 4%;
+    z-index: 3;
+}
+img[src="Images/idea.png"]{
+    position: absolute;
+    right: 9vw;
+    top: 26vw;
+    width: 5%;
+    z-index: 3;
+    cursor: pointer;
+}
+.noticable:hover{
+    transform: scale(1.1);
+    animation: rotate30 1s linear infinite;
+    cursor: pointer;
+}
+@keyframes rotate360{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate30{
+    50%{
+        transform: rotate(360deg);
+    }
+}
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                    SKILLS SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+
+
+.skills_section{
+    height: 26vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+.skills_container{
+    text-align: center;
+    width: 30%;
+    height: 25vw;
+    background: linear-gradient(to right,#873FAF,#4B28C4);
+    border-radius: 3vw;
+}
+.skills_container:hover{
+    transform: scale(1.05);
+    box-shadow:5px 5px 10px #222;
+}
+.professionalism{
+    font-size: 2.8vw;
+    color: white;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+.skill_images{
+    width: 43%;
+    margin-top: -22%;
+}
+.skills_container:hover .skill_images{
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+
+    }
+    100%{
+        transform: rotate(-10deg);
+
+    }
+}
+.border_bottom_white{
+    display: inline-block;
+    width: 80%;
+    height: 3vw;
+    border-bottom:0.2vw solid white;
+}
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                    FAKULTET SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+.fakultet_section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 64vw;
+
+}
+.fakultet_container{
+    width: 29%;
+    height: 60vw;
+    background: linear-gradient(#FD31B7,#7032B1);
+}
+.fakultet_container:hover{
+    transform: scale(1.01);
+    box-shadow:10px 10px 30px #222;
+}
+.fakultet_sale_baner{
+    float: left;
+    margin-top: -2%;
+    width: 48%;
+}
+.fakultet_image_container{
+    height: 19vw;
+    position: relative;
+}
+.fakultet_languages{
+    float: right;
+    margin: 1px;
+    width: 2.5vw;
+    margin-top: -1%;
+
+}
+.fakultet_image{
+    width: 85%;
+    height: 119%;
+    top: -19%;
+    left: 8%;
+    position: absolute;
+}
+.fakultet_description{
+    width: 100%;
+    height: 33.5vw;
+    text-align: center;
+}
+.fakultet_header{
+    color: white;
+    font-size: 3vw;
+    height: 10vw;
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+img[src="Images/montage.png"]{
+    top: -12%;
+    width: 87%;
+    left: 7%;
+    height: 120%;
+}
+.border_top_white{
+    border-top: 1px solid white;
+    width: 81%;
+    height: 10%;
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    font-size: 1.7vw;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.border_top_white > p{
+    float: right;
+    font-weight: bold;
+}
+.offline_online_checkbox{
+    margin: 5%;
+}
+.manramasn_btn{
+    width: 77%;
+    background: #525DEA;
+    height: 4.5vw;
+    border-radius: 4vw;
+    font-size: 2vw;
+    box-sizing: border-box;
+}
+.manramasn_btn:hover{
+    border:1px solid white;
+    background: rgba(82,93,234,0.5);
+}
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                     CLASSES SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+.classes_section{
+    text-align: center;
+}    
+.purple_header{
+    display: block;
+    color: white;
+    width: 94%;
+    height: 4vw;
+    background: #85018B;
+    text-align: center;
+    font-size: 2.7vw;
+    padding-top: 0.4vw;
+    margin: 1% auto;
+}
+
+.class_sale_banner{
+    flex-direction: column;
+    width: 38%;
+    height: 75%;
+    display: inline-block;
+}
+.classes{
+    height: 31vw;
+    width: 46.8%;
+    background: linear-gradient(to right,#FD31B7 25%,#7032B1);
+    border-radius: 3vw;
+    margin: 0.5%;
+    color: white;
+}
+.classes:hover{
+    box-shadow:5px 5px 10px #222;
+}
+.front_end_heading{
+    font-size: 2.5vw;
+}
+.class_information{
+    position: relative;
+    text-align: center;
+    height: 75%;
+}
+.class_information > div{
+    margin: 0 2%;
+}
+.sale_banner_for_class_section{
+    position: absolute;
+    width: 30%;
+    height: 12%;
+    top: -2px;
+    right: 5%;
+}
+.class_inforamtion_details{
+    width: 45%;
+    height: 75%;
+    display: inline-block;
+}
+.border_bottom_white_classes{
+    border-bottom: 1px solid white;
+    height: 20%;
+    font-size: 1.6vw;
+    justify-content: flex-start;
+    padding-left: 3%;
+    box-sizing: border-box;
+}
+.us_cragir_btn{
+    background: #B27BCC;
+    width: 97%;
+    height: 3vw;
+    border-radius: 3vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.us_cragir_btn:hover{
+    border: 1px solid white;
+    background: rgba(255,255,255,0.4);
+}
+.grancvel_arcanc_btn_container{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.grancvel_arcanc_btn{
+    width: 38%;
+    height: 3.5vw ;
+    background: #525DEA;
+    border-radius: 3vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.6vw;
+    box-sizing: border-box;
+}
+.grancvel_arcanc_btn:hover{
+    border: 1px solid white;
+    background: transparent;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                     SERVICES SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+
+.service_section{
+    height: 39.8vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services{
+    width: 44.5%;
+    margin:0 2%;
+    height: 15.6vw;
+    background: linear-gradient(to right,#FD31B7 25%,#7032B1);
+    border-radius: 2.5vw;
+    display: flex;
+    color: white;
+}
+.services:hover{
+    box-shadow:5px 5px 10px #222;
+}
+
+.patvirel_btn{
+    background: #525DEA;
+    width: 75%;
+    height: 3.5vw;
+    border-radius: 3vw;
+    margin: auto;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+.patvirel_btn:hover{
+    background: white;
+    color: black;
+}
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                MAIL SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+
+
+.mail_section{
+    height: 19vw;
+    background: linear-gradient(to bottom right,#7032B1,#FD31B7);
+    margin-top: 2%;
+}
+.mail_image_container{
+    width: 50%;
+    height: 19vw;
+    float: left;
+    position: relative;
+}
+.mail_form_container{
+    width: 50%;
+    height: 19vw;
+    float: left;
+    position: relative;
+}
+.letter{
+    width: 13%;
+    position: absolute;
+    top: 2vw;
+    left: 40vw;
+    animation: mail_going 4s infinite;
+    z-index: 1;
+}
+@keyframes mail_going{
+    20%{top:5vw;}
+    40%{top:6vw;}
+    80%{top:7vw;left: 22vw;}
+    90%{top:8vw;left: 15vw;}
+    100%{z-index: -1;}
+}
+.mail_flag{
+    width: 6%;
+    position: absolute;
+    top: 2vw;
+    left: 19vw;
+    animation: mail_recived 1s linear infinite;
+}
+@keyframes mail_recived{
+    to{transform: scale(1.1)}
+}
+.sign_in_box{
+    width: 75%;
+    height: 17vw;
+    background: #E2B1E8;
+    border-radius: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bajanordagrvel_text{
+    font-size: 2.7vw;
+    width: 80%;
+    height: 25%;
+    color: #533376;
+}
+.mail_input{
+    background: #D8CFE2;
+    width: 60%;
+    height: 20%;
+    padding-left: 16%;
+    box-sizing: border-box;
+    font-size: 1.1vw;
+    color: #523276;
+    outline: none;
+    border: none;
+    border-radius: 0.5vw;
+}
+.uxarkel_mail_btn{
+    background: #9F6BCD;
+    width: 32%;
+    height: 23%;
+    border-radius: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 450;
+    cursor: pointer;
+}
+.uxarkel_mail_btn:hover{
+    opacity: 0.6;
+}
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                            FOOTER 
+----------------------------------------------------------------------------------------------------------------
+*/
+
+footer{
+    height: 60vw;
+    background: linear-gradient(#A34CE9,#672C90);
+    opacity: 0.95;
+    position: relative;
+}
+.social_media_section{
+    width: 43%;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    float: left;
+
+}
+.social_media_section > img{
+    width: 50%;
+    margin-left: -15%;
+}
+.about_article{
+    width: 63%;
+    height: 17vw;
+    color: #BFA8D2;
+    line-height: 2em;
+    text-align: start;
+    font-size: 1.1vw;
+}
+.social_media_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    height: 10%;
+    margin-left: -17%;
+}
+.social_link_container{
+    width: 22%;
+    height: 100%;
+    background: #8565E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social_link_container:hover{
+    opacity: 0.5;
+}
+.social_link_container  img{
+    width: 1.5vw;
+}
+.whole_navigaion_section{
+    width: 57%;
+    height: 45vw;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+.navigation_columns{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    color: #BFA8D2;
+
+}
+.navigation_through_site_heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8vw;
+    color: white;
+}
+.navigation_columns a{
+    text-decoration: none;
+    color: #BFA8D2;
+}
+.navigation_columns a:hover{
+    color: orange;
+}
+.footer{
+    width: 100%;
+    height: 13vw;
+    background: linear-gradient(#672C90,#2C3192);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.copyright{
+    width: 90%;
+    color: #BFA8D2;
+    line-height: 2em;
+    font-size: 1.3vw;
+    margin: auto;
+    margin-top: 2%;
+
+}
+.copyright > p{
+    margin: 0;
+    color: orange;
+    display: inline;
+}
+
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                        MEDIA QUERY 
+----------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+@media only screen and (max-width:600px){
+    .home_section{
+        height: 90vw;
+    }
+    .main_header{
+        height: 15vw;
+        justify-content: center;
+    }
+    .hiding_nav,
+    img[src="Images/shisteryonka.png"],
+    .zangaharel_btn,
+    img[src="Images/idea.png"],
+    img[src="Images/red_circle.png"],
+    img[src="Images/play_button.png"],
+    .question_mark
+    {
+        display: none;
+    }
+    .search_icon{
+        width: 20%;
+    }
+    .logo_container{
+        height: 100%;
+        width: 40%;
+    }
+    .heading_nav{
+        width: 30%;
+    }
+    .logo_container > img{
+        width: 100%;
+        height: auto;
+    }
+    .mobile_menu{
+        display: block;
+        width: 8%;
+    }
+    #searching_input{
+        position: static;
+        width: 100%;
+        height: 10vw;
+        color: #4B28C4;
+        outline: none;
+        border: 2px solid #4B28C4;
+        padding-left: 3%;
+        font-size: 3vw;
+        animation: glow 1s linear infinite;
+        display: none;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .montage_area_img{
+        display: none;
+    }
+    .krtutyun_praktika_ashxatanq_container{
+        width: 60%;
+        height: 65vw;
+        font-size: 9vw;
+    }
+    .stanal_krtutyun{
+        font-size: 3vw;
+    }
+    .education_types{
+        height: 8vw;
+        font-size: 3.5vw;
+    }
+/* //=========================
+        IMAGES
+//========================= */
+    img[src="Images/waves.png"]{
+        height: 80vw;
+    }
+    .zangaharel_btn_mobile{
+        top: 2vw;
+        right: 8vw;
+        width: 15%;
+        height: 15vw;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img[src="Images/user_login.png"]{
+        right: 8vw;
+        top: 20vw;
+        width: 15%;
+    }
+    img[src="Images/hamalsaran.png"]{
+        right: 8vw;
+        top: 38vw;
+        width: 15%;
+    }
+    img[src="Images/medal.png"]{
+        right: 8vw;
+        top: 55vw;
+        width: 15%;
+    }
+
+
+/*=================================
+            SKILLS SECTION
+==================================*/
+    .skills_section{
+        flex-wrap: wrap;
+        height: 250vw;
+        align-items: center;
+    }
+    .skills_container{
+        width: 80%;
+        height: 60vw;
+        border-radius: 7vw;
+    }
+    .skill_images{
+        width: 35%;
+    }
+    .professionalism{
+        font-size: 7vw;
+    }
+    .border_bottom_white{
+        height: 8vw;
+    }
+
+    /*=================================
+                FACULTET SECTION
+    ==================================*/
+    .fakultet_section{
+        flex-wrap: wrap;
+        height: 500vw;
+    }
+    .fakultet_container{
+        width: 80%;
+        height: 150vw;
+    }
+    .purple_header{
+        height: 10vw;
+        font-size: 7vw;
+    }
+    .fakultet_languages{
+        width: 10%;
+    }
+    .fakultet_image_container{
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    .fakultet_image{
+        height: 50vw;
+        position: absolute;
+        top: 0;
+    }
+    .fakultet_description{
+        height: 70vw;
+    }
+    .fakultet_header{
+        height: 20vw;
+        font-size: 6vw;
+    }
+    .border_top_white{
+        height: 10vw;
+        font-size: 5vw;
+    }
+    .manramasn_btn{
+        margin-top: 10%;
+        height: 10vw;
+        font-size: 5vw;
+    }
+
+/*=================================
+            FACULTET SECTION
+==================================*/
+    .classes_container{
+        flex-wrap: wrap;
+    }
+    .classes{
+        width: 80%;
+        height: 55vw;
+    }
+    .border_bottom_white_classes{
+        font-size: 3vw;
+    }
+    .grancvel_arcanc_btn,
+    .us_cragir_btn{
+        height: 6vw;
+        font-size: 3vw;
+    }
+    .front_end_heading{
+        font-size: 4vw;
+    }
+    
+/*=================================
+            SERVICE SECTION
+==================================*/
+    .service_section{
+        flex-wrap: wrap;
+        height: 120vw;
+        flex-direction: column;
+    }
+    .services{
+        width: 80%;
+        height: 25vw;
+        margin: 0;
+    }
+    .services img{
+        width: 80%;
+    }
+/*=================================
+            MAIL SECTION
+==================================*/
+    .mail_section{
+        height: 40vw;
+    }
+    .mail_image_container{
+        display: none;
+    }
+    .mail_form_container{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+    }
+    .sign_in_box{
+        margin: auto;
+        height: 90%;
+    }
+    .bajanordagrvel_text{
+        font-size: 5vw;
+    }
+    .mail_input{
+        font-size: 2.8vw;
+    }
+    .uxarkel_mail_btn{
+        font-size: 3vw;
+    }
+    img[src="../Header and Footer Images/chevron.png"]{
+        box-shadow: 0 0 2vw grey;
+    }
+
+/*=================================
+                FOOTER
+==================================*/
+    footer{
+        height: 150vw;
+    }
+    .social_media_section{
+        float: none;
+        width: 90%;
+        margin: auto;
+        height: 80vw;
+    }
+    .social_media_section > img{
+        margin-left: -10%;
+        width: 60%;
+    }
+    .about_article{
+        font-size: 2.5vw;
+        text-align: center;
+        height: 45vw;
+    }
+    .footer{
+        height: 20vw;
+    }
+    .copyright{
+        font-size: 1.7vw;
+    }
+    .social_media_container{
+        margin: 0;
+        width: 60%;
+        height: 10vw;
+    }
+    .social_link_container{
+        height: 100%;
+
+    }
+    .social_link_container > a{
+        text-align: center;
+    }
+    .social_link_container img{
+        width: 80%;
+    }
+    .whole_navigaion_section{
+        width: 100%;
+    }      
+    .navigation_through_site_heading{
+        font-size: 2.5vw;
+        justify-content: center;
+    }
+    .navigation_columns{
+        width: 33%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+}

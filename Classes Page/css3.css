@@ -1,0 +1,559 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.flex_alcenter_jscenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+*{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*
+//___________________________________________________________________________________________________________
+//                                              LOGIN AND REGISTRATION
+//___________________________________________________________________________________________________________
+*/
+.login_registration_screen{
+    position: fixed;
+    width: 100%;    
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    display: none   ;
+}
+.login_registration{
+    margin: auto;
+    width: 40%;
+    height: 40vw;
+    background: #2C3192;
+    text-align: center;
+}
+.registration_form{
+    width: 90%;
+    background: white;
+    border:none;
+    outline:none;
+    height: 9% !important;
+    margin: 2%;
+    box-sizing: border-box;
+    color: #672C90;
+    text-align: center;
+}
+.close_registration{
+    float: right;
+    margin: 2%;
+    cursor: pointer;
+}
+input[type="submit"]{
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: rgb(214, 104, 0);
+}
+
+/*
+//_________________________________________
+//                HEADER
+//_________________________________________
+*/
+.main_header{
+    height: 9.7vw;
+    background: linear-gradient(45deg,#672C90,#2C3192);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.logo_container{
+    width: 28%;
+    height: 9.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img[src="../Header and Footer Images/gitlogo.png"]{
+    width: 75%;
+    height: 6vw;
+}
+.heading_nav{
+    width: 72%;
+    height: 9.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.carayutyunner{
+    width: 20%;
+}
+.carayutyunner:hover{
+    background: #EA405A;
+    animation: background_blur_white 0.7s linear infinite;
+}
+.dasyntacner{
+    width: 18.5%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.dasyntacner:hover{
+    animation: background_blur_white 0.7s linear infinite;
+    background: #EA405A;
+}
+@keyframes background_blur_white{
+    50%{
+        box-shadow:0 2px 4px white;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+
+
+/* -----------
+    DROP DOWN
+------------*/
+.drop_down{
+    background: linear-gradient(#873FAF,#4B28C4);
+    position: absolute;
+    top: 8vw;
+    right: 30%;
+    width: 15%;
+    height: 15vw !important;
+    z-index: 2;
+    color: whitesmoke;
+    border:1px solid white;
+    display: none;
+}
+.drop_down_items{
+    width: 100%;
+    height: 33%;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop_down_items:hover{
+    background: linear-gradient(#4B28C4,#873FAF);
+    color: white;
+
+}
+
+.heading_nav > div{
+    height: 3.5vw;
+    font-size: 1.5vw;
+}
+.heading_nav > div:hover{
+    cursor: pointer;
+}
+
+.border_white_hover:hover{
+    animation: background_blur_white 0.8s linear infinite;
+    background: #EA405A;
+}
+.search_icon{
+    cursor: pointer;
+}
+#searching_input{
+    width: 20%;
+    height: 2.5vw;
+    position: absolute;
+    right: 40%;
+    top: 10vw;
+    z-index: 4;
+    color: #4B28C4;
+    display: none;
+    outline: none;
+    border: 2px solid #4B28C4;
+    border-radius: 1vw;
+    padding-left: 2%;
+}
+.language_drop_down{
+    width: 3%;
+    height: 7vw !important;
+    background: #2C3192;
+    position: absolute;
+    right: 2.7%;
+    top: 6vw;
+    z-index: 3;
+    display: none;
+}
+.language_drop_down_items{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language_drop_down_items > img{
+    width: 80%;
+}
+.mobile_menu{
+    display: none;
+}
+
+
+/*
+//_____________________________________________________________________________
+//                                  MAIN BANNER
+//_____________________________________________________________________________
+*/
+.main_banner{
+    width: 100%;
+    height: 23vw;
+    background: url("Images/code.jpg") no-repeat;
+    background-size: 100% 150%;
+    display: flex;
+    position: relative;
+}
+
+.fakultet_img_container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_heading{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 4.5vw;
+    text-align: center;
+}
+.html_css_js_img_container{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grancvel_btn{
+    position: absolute;
+    bottom: 0;
+    right:29%;
+    background: #463074;
+    width: 17%;
+    height: 4.5vw;
+    border-radius: 0.5vw;
+    margin: 1%;
+    cursor: pointer;
+}
+.grancvel_btn:hover{
+    opacity: 0.7;
+}
+.online_usucum_btn{
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    background: #463074;
+    width: 25%;
+    height: 4.5vw;
+    border-radius: 0.5vw;
+    margin: 1%;
+    cursor: pointer;
+}
+.online_usucum_text{
+    font-size: 1.8vw;
+    justify-content: space-evenly;
+}
+.online_usucum_btn:hover{
+    opacity: 0.7;
+}
+.grancvel_text{
+    font-size: 1.8vw;
+}   
+
+
+
+/*
+//_____________________________________________________________________________
+//                                  MAIN INFORMATION
+//_____________________________________________________________________________
+*/
+.main_information{
+    height: 4.5vw;    
+    background: #662D91;
+    display: flex;
+}
+.main_information_column{
+    height: 80%;
+    border-right:2px solid white;
+    font-size: 1.5vw;
+}
+
+/*
+//_____________________________________________________________________________
+//                                  MAIN ARTICLE
+//_____________________________________________________________________________
+*/
+.main_article{
+    margin-top: 2%;
+}
+.aystex_sovorumen{
+    position: absolute;
+    top: 15%;
+    font-size: 5vw;
+    color: #4D4D4D;
+}
+.language_circle_container{
+    position: absolute;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 32%;
+}
+.language_circle{
+    text-align: center;
+    background: #B3B3B3;
+    border-radius: 50%;
+    border: 2px solid #676767;
+    width: 20%;
+}
+.language_circle > img{
+    width: 100%;
+}
+
+
+/*
+//_____________________________________________________________________________
+//                                  USUMNAKAN CRAGIR 
+//_____________________________________________________________________________
+*/
+.usumnakan_cragir{
+    height: 8vw;
+    background: #A2459F;
+    font-size: 4vw;
+}
+
+/*
+//_____________________________________________________________________________
+//                                  I PUL 
+//_____________________________________________________________________________
+*/
+.I_pul_section{
+    height: 60vw;
+    background: linear-gradient(45deg,#F15B24,#FBB03B);
+    color: white;
+    position: relative;
+}
+.pul_section_1_container{
+    width: 50%;
+    height: 95%;
+    float: left;
+}
+.globus_banner_container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.I_pul_text{
+    height: 40%;
+    font-size: 2.5vw;
+}
+.puli_vernagir{
+    font-size: 3.5vw;
+    width: 100%;text-align: center;
+}
+.dasyntac_container{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dasyntac_anun{
+    background: #EFEDEF;
+    color: #4D4D4D;
+    width: 90%;
+    border-radius: 3vw;
+    height: 12%;
+    font-size: 2.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dasyntac_anun:hover{
+    background: white;
+}
+
+
+.pul_section_2_container{
+    width: 50%;
+    height: 95%;
+    float: left;
+}
+.class_description{
+    font-size: 1.7vw;
+    text-align: center;
+    line-height: 1.5em;
+}
+.tnayin_btns{
+    width: 35%;
+    height: 3.5vw;
+    border: 2px solid black;
+    border-radius: 2vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+.tnayin_btns:hover{
+    background: white;
+    color: black;
+}
+.tnayin_ashxatanq{
+    background: #7AC943;
+}
+.videodas{
+    background: #FFC50D;
+}
+/*
+//_____________________________________________________________________________
+//                                  II PUL 
+//_____________________________________________________________________________
+*/
+.II_pul_section{
+    height: 60vw;
+    background: linear-gradient(45deg,#FF67DD,#FBB03C);
+    color: white;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                            FOOTER 
+----------------------------------------------------------------------------------------------------------------
+*/
+
+footer{
+    height: 60vw;
+    background: linear-gradient(#A34CE9,#672C90);
+    opacity: 0.95;
+    position: relative;
+}
+.social_media_section{
+    width: 43%;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    float: left;
+
+}
+.social_media_section > img{
+    width: 50%;
+    margin-left: -15%;
+}
+.about_article{
+    width: 63%;
+    height: 17vw;
+    color: #BFA8D2;
+    line-height: 2em;
+    text-align: start;
+    font-size: 1.1vw;
+}
+.social_media_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    height: 10%;
+    margin-left: -17%;
+}
+.social_link_container{
+    width: 22%;
+    height: 100%;
+    background: #8565E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social_link_container:hover{
+    opacity: 0.5;
+}
+.social_link_container  img{
+    width: 1.5vw;
+}
+.whole_navigaion_section{
+    width: 57%;
+    height: 45vw;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+.navigation_columns{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    color: #BFA8D2;
+
+}
+.navigation_through_site_heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8vw;
+    color: white;
+}
+.navigation_columns a{
+    text-decoration: none;
+    color: #BFA8D2;
+}
+.navigation_columns a:hover{
+    color: orange;
+}
+.footer{
+    width: 100%;
+    height: 13vw;
+    background: linear-gradient(#672C90,#2C3192);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.copyright{
+    width: 90%;
+    color: #BFA8D2;
+    line-height: 2em;
+    font-size: 1.3vw;
+    margin: auto;
+    margin-top: 2%;
+
+}
+.copyright > p{
+    margin: 0;
+    color: orange;
+    display: inline;
+}
+
+
+
+
+
+
+
